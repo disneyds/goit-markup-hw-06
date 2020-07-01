@@ -64,7 +64,9 @@
             Эффективные решения для <br />
             вашего бизнеса
           </h1>
-          <a href="#" class="hero-link btn">Заказать услугу</a>
+          <button data-modal-open type="button" class="hero-link btn">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Features -->
@@ -443,5 +445,44 @@
         </p>
       </div>
     </footer>
+    <!-- is-hidden -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="form">
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <ul class="form-items no-margin no-padding">
+            <li class="form-aria">
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" />
+            </li>
+            <li class="form-aria">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+            </li>
+            <li class="form-aria">
+              <label for="mail">Почта</label>
+              <input type="email" name="mail" id="mail" />
+            </li>
+          </ul>
+          <textarea
+            class="coment"
+            name="coment"
+            rows="10"
+            placeholder="Коментарий"
+          ></textarea>
+          <div role="group" class="policy">
+            <input id="policy" name="policy" type="checkbox" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="link" href="./document.html">Условия договора</a></label
+            >
+          </div>
+          <button type="submit" class="btn">Отправить</button>
+          <button data-modal-close type="button" class="close-btn"></button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
