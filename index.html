@@ -435,7 +435,10 @@
         </div>
         <div class="form-conteiner">
           <b class="subscribe">Подпишитесь на рассылку</b>
-          <form action=""></form>
+          <form class="footer-form">
+            <label class="text-mail" for="mail">E-mail</label>
+            <input type="email" name="mail" id="mail" />
+          </form>
           <button type="button" class="btn">Подписаться</button>
         </div>
       </div>
@@ -445,23 +448,32 @@
         </p>
       </div>
     </footer>
-    <!-- is-hidden -->
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form">
           <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
           <ul class="form-items no-margin no-padding">
             <li class="form-aria">
-              <label for="name">Имя</label>
+              <label class="text-name" for="name">Имя</label>
               <input type="text" name="name" id="name" />
+              <svg class="icon icon-name-modal">
+                <use href="./img/modal-svg.svg#icon-name-modal"></use>
+              </svg>
             </li>
             <li class="form-aria">
-              <label for="tel">Телефон</label>
+              <label class="text-phone" for="tel">Телефон</label>
               <input type="tel" name="tel" id="tel" />
+              <svg class="icon icon-phone-modal">
+                <use href="./img/modal-svg.svg#icon-phone-modal"></use>
+              </svg>
             </li>
             <li class="form-aria">
-              <label for="mail">Почта</label>
+              <label class="text-mail" for="mail">Почта</label>
               <input type="email" name="mail" id="mail" />
+              <svg class="icon icon-mail-modal">
+                <use href="./img/modal-svg.svg#icon-mail-modal"></use>
+              </svg>
             </li>
           </ul>
           <textarea
@@ -478,7 +490,11 @@
             >
           </div>
           <button type="submit" class="btn">Отправить</button>
-          <button data-modal-close type="button" class="close-btn"></button>
+          <button data-modal-close type="button" class="close-btn">
+            <svg class="icon icon-close-modal">
+              <use href="./img/modal-svg.svg#icon-close-modal"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </div>
