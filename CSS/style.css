@@ -560,6 +560,14 @@ btn:focus {
   margin-top: 9px;
 }
 
+.contacts > a {
+  display: flex;
+}
+
+.logo-w > span {
+  margin-right: 8px;
+}
+
 .subscribe {
   color: var(--secondary-white-color);
   display: inline-block;
