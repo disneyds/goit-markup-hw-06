@@ -1205,27 +1205,32 @@ btn:focus {
   width: 360px;
 }
 
-.footer-form:hover,
-.footer-form input:hover {
-  color: var(--accent-collor);
+.footer-input:hover,
+.footer-input:focus {
   border-color: var(--accent-collor);
+  outline: transparent;
 }
 
-.footer-form input {
+.footer-input {
   display: block;
   margin-right: auto;
   width: 100%;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: var(--secondary-white-color);
   background-color: transparent;
 }
 
-.footer-form label {
+.text-mail {
   display: block;
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
   transition: 250ms transform var(--cubic);
+}
+
+.footer-input:not(:placeholder-shown) + .text-mail {
+  opacity: 0;
 }
