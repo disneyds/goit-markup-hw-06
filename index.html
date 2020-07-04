@@ -72,7 +72,7 @@
       <!-- Features -->
       <section class="features">
         <div class="conteiner">
-          <h2 class="is-hidden">Наши сильные стороны</h2>
+          <h2 class="hide">Наши сильные стороны</h2>
           <ul class="no-margin no-padding features-flex">
             <li class="item">
               <h3 class="features-item icon-feature-1 no-margin">
@@ -455,40 +455,62 @@
           <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
           <ul class="form-items no-margin no-padding">
             <li class="form-aria">
-              <label class="text-name" for="name">Имя</label>
-              <input type="text" name="name" id="name" />
+              <input
+                class="user-data"
+                placeholder=" "
+                type="text"
+                name="name"
+                id="name"
+              />
+              <label class="label" for="name">Имя</label>
               <svg class="icon icon-name-modal">
                 <use href="./img/modal-svg.svg#icon-name-modal"></use>
               </svg>
             </li>
             <li class="form-aria">
-              <label class="text-phone" for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" />
+              <input
+                class="user-data"
+                placeholder=" "
+                type="tel"
+                name="tel"
+                id="tel"
+              />
+              <label class="label" for="tel">Телефон</label>
               <svg class="icon icon-phone-modal">
                 <use href="./img/modal-svg.svg#icon-phone-modal"></use>
               </svg>
             </li>
             <li class="form-aria">
-              <label class="text-mail" for="mail">Почта</label>
-              <input type="email" name="mail" id="mail" />
+              <input
+                class="user-data"
+                placeholder=" "
+                type="email"
+                name="mail"
+                id="mail"
+              />
+              <label class="label" for="mail">Почта</label>
               <svg class="icon icon-mail-modal">
                 <use href="./img/modal-svg.svg#icon-mail-modal"></use>
               </svg>
             </li>
           </ul>
-          <textarea
-            class="coment"
-            name="coment"
-            rows="10"
-            placeholder="Коментарий"
-          ></textarea>
-          <div role="group" class="policy">
-            <input id="policy" name="policy" type="checkbox" />
-            <label for="policy"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="link" href="./document.html">Условия договора</a></label
-            >
+          <div role="group" class="text-aria">
+            <textarea
+              class="coment"
+              name="coment"
+              rows="10"
+              placeholder=" "
+            ></textarea>
+            <label class="coment-title" for="coment">Коментарий</label>
           </div>
+
+          <label class="policy">
+            <input class="hide checkbox" name="policy" type="checkbox" />
+            <span class="policy-icon"></span>
+            <span>Соглашаюсь с рассылкой и принимаю</span>
+            <a class="link" href="./document.html">Условия договора</a>
+          </label>
+
           <button type="submit" class="btn">Отправить</button>
           <button data-modal-close type="button" class="close-btn">
             <svg class="icon icon-close-modal">
