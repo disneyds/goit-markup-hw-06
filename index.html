@@ -69,6 +69,78 @@
           </button>
         </div>
       </section>
+      <!-- modal -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <form class="form">
+            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+            <ul class="form-items no-margin no-padding">
+              <li class="form-aria">
+                <input
+                  class="user-data"
+                  placeholder=" "
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+                <label class="label" for="name">Имя</label>
+                <svg class="icon icon-name-modal">
+                  <use href="./img/modal-svg.svg#icon-name-modal"></use>
+                </svg>
+              </li>
+              <li class="form-aria">
+                <input
+                  class="user-data"
+                  placeholder=" "
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                />
+                <label class="label" for="tel">Телефон</label>
+                <svg class="icon icon-phone-modal">
+                  <use href="./img/modal-svg.svg#icon-phone-modal"></use>
+                </svg>
+              </li>
+              <li class="form-aria">
+                <input
+                  class="user-data"
+                  placeholder=" "
+                  type="email"
+                  name="mail"
+                  id="mail"
+                />
+                <label class="label" for="mail">Почта</label>
+                <svg class="icon icon-mail-modal">
+                  <use href="./img/modal-svg.svg#icon-mail-modal"></use>
+                </svg>
+              </li>
+            </ul>
+            <div role="group" class="text-aria">
+              <textarea
+                class="coment"
+                name="coment"
+                rows="10"
+                placeholder=" "
+              ></textarea>
+              <label class="coment-title" for="coment">Коментарий</label>
+            </div>
+
+            <label class="policy">
+              <input class="hide checkbox" name="policy" type="checkbox" />
+              <span class="policy-icon"></span>
+              <span>Соглашаюсь с рассылкой и принимаю</span>
+              <a class="link" href="./document.html">Условия договора</a>
+            </label>
+
+            <button type="submit" class="btn">Отправить</button>
+            <button data-modal-close type="button" class="close-btn">
+              <svg class="icon icon-close-modal">
+                <use href="./img/modal-svg.svg#icon-close-modal"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
       <!-- Features -->
       <section class="features">
         <div class="conteiner">
@@ -454,78 +526,6 @@
         </p>
       </div>
     </footer>
-    <!-- modal -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <form class="form">
-          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-          <ul class="form-items no-margin no-padding">
-            <li class="form-aria">
-              <input
-                class="user-data"
-                placeholder=" "
-                type="text"
-                name="name"
-                id="name"
-              />
-              <label class="label" for="name">Имя</label>
-              <svg class="icon icon-name-modal">
-                <use href="./img/modal-svg.svg#icon-name-modal"></use>
-              </svg>
-            </li>
-            <li class="form-aria">
-              <input
-                class="user-data"
-                placeholder=" "
-                type="tel"
-                name="tel"
-                id="tel"
-              />
-              <label class="label" for="tel">Телефон</label>
-              <svg class="icon icon-phone-modal">
-                <use href="./img/modal-svg.svg#icon-phone-modal"></use>
-              </svg>
-            </li>
-            <li class="form-aria">
-              <input
-                class="user-data"
-                placeholder=" "
-                type="email"
-                name="mail"
-                id="mail"
-              />
-              <label class="label" for="mail">Почта</label>
-              <svg class="icon icon-mail-modal">
-                <use href="./img/modal-svg.svg#icon-mail-modal"></use>
-              </svg>
-            </li>
-          </ul>
-          <div role="group" class="text-aria">
-            <textarea
-              class="coment"
-              name="coment"
-              rows="10"
-              placeholder=" "
-            ></textarea>
-            <label class="coment-title" for="coment">Коментарий</label>
-          </div>
-
-          <label class="policy">
-            <input class="hide checkbox" name="policy" type="checkbox" />
-            <span class="policy-icon"></span>
-            <span>Соглашаюсь с рассылкой и принимаю</span>
-            <a class="link" href="./document.html">Условия договора</a>
-          </label>
-
-          <button type="submit" class="btn">Отправить</button>
-          <button data-modal-close type="button" class="close-btn">
-            <svg class="icon icon-close-modal">
-              <use href="./img/modal-svg.svg#icon-close-modal"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
 
     <script src="./js/modal.js"></script>
   </body>
